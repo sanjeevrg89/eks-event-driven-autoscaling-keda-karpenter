@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ticketing
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: ticketing
+  template:
+    metadata:
+      labels:
+        app: ticketing
+    spec:
+      containers:
+      - name: ticketing
+        image: public.ecr.aws/r5m2h0c9/concert-platform-app:latest
+        ports:
+        - containerPort: 5000

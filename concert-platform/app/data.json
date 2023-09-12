@@ -1,0 +1,145 @@
+{
+    "Concerts": [
+       {
+          "PutRequest": {
+             "Item": {
+                "id": {"N": "1"},
+                "name": {"S": "Rock Night"},
+                "singer": {"S": "Bruce Springsteen"},
+                "tickets": {"N": "100"}
+             }
+          }
+       },
+       {
+          "PutRequest": {
+             "Item": {
+                "id": {"N": "2"},
+                "name": {"S": "Pop Fiesta"},
+                "singer": {"S": "Taylor Swift"},
+                "tickets": {"N": "150"}
+             }
+          }
+       },
+       {
+          "PutRequest": {
+             "Item": {
+                "id": {"N": "3"},
+                "name": {"S": "Hip-Hop Vibes"},
+                "singer": {"S": "Kendrick Lamar"},
+                "tickets": {"N": "120"}
+             }
+          }
+       },
+       {
+          "PutRequest": {
+             "Item": {
+                "id": {"N": "4"},
+                "name": {"S": "Country Roads"},
+                "singer": {"S": "Dolly Parton"},
+                "tickets": {"N": "130"}
+             }
+          }
+       },
+       {
+          "PutRequest": {
+             "Item": {
+                "id": {"N": "5"},
+                "name": {"S": "Jazz & Blues"},
+                "singer": {"S": "B.B. King"},
+                "tickets": {"N": "80"}
+             }
+          }
+       },
+       {
+          "PutRequest": {
+             "Item": {
+                "id": {"N": "6"},
+                "name": {"S": "Pop Star"},
+                "singer": {"S": "Justin Timberlake"},
+                "tickets": {"N": "100"}
+             }
+          }
+       },
+       {
+          "PutRequest": {
+             "Item": {
+                "id": {"N": "7"},
+                "name": {"S": "Queen B"},
+                "singer": {"S": "Beyoncé"},
+                "tickets": {"N": "100"}
+             }
+          }
+       },
+       {
+          "PutRequest": {
+             "Item": {
+                "id": {"N": "8"},
+                "name": {"S": "The Biebs"},
+                "singer": {"S": "Justin Bieber"},
+                "tickets": {"N": "100"}
+             }
+          }
+       },
+       {
+          "PutRequest": {
+             "Item": {
+                "id": {"N": "9"},
+                "name": {"S": "Gaga Night"},
+                "singer": {"S": "Lady Gaga"},
+                "tickets": {"N": "100"}
+             }
+          }
+       },
+       {
+          "PutRequest": {
+             "Item": {
+                "id": {"N": "10"},
+                "name": {"S": "Fireworks"},
+                "singer": {"S": "Katy Perry"},
+                "tickets": {"N": "100"}
+             }
+          }
+       },
+       {
+          "PutRequest": {
+             "Item": {
+                "id": {"N": "11"},
+                "name": {"S": "Thank U, Next"},
+                "singer": {"S": "Ariana Grande"},
+                "tickets": {"N": "100"}
+             }
+          }
+       },
+       {
+          "PutRequest": {
+             "Item": {
+                "id": {"N": "12"},
+                "name": {"S": "God's Plan"},
+                "singer": {"S": "Drake"},
+                "tickets": {"N": "100"}
+             }
+          }
+       },
+       {
+          "PutRequest": {
+             "Item": {
+                "id": {"N": "13"},
+                "name": {"S": "Wrecking Ball"},
+                "singer": {"S": "Miley Cyrus"},
+                "tickets": {"N": "100"}
+             }
+          }
+       },
+       {
+          "PutRequest": {
+             "Item": {
+                "id": {"N": "14"},
+                "name": {"S": "Yeezus"},
+                "singer": {"S": "Kanye West"},
+                "tickets": {"N": "100"}
+             }
+          }
+       }
+    ]
+ }
+ 

@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: eventbridge-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: eventbridge
+  template:
+    metadata:
+      labels:
+        app: eventbridge
+    spec:
+      containers:
+      - name: eventbridge
+        image: public.ecr.aws/r5m2h0c9/concert-platform-eventbrdige-consumer:latest

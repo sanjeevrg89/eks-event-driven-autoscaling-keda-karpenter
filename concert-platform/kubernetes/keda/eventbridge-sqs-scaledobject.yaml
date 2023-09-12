@@ -1,0 +1,13 @@
+apiVersion: keda.sh/v1alpha1
+kind: ScaledObject
+metadata:
+  name: eventbridge-scaledobject
+  namespace: default
+spec:
+  scaleTargetRef:
+    name: eventbridge-consumer-deployment
+  triggers:
+  - type: aws-sqs-queue
+    metadata:
+      queueURL: "https://sqs.us-west-2.amazonaws.com/123255318457/ConsumerQueue"
+      queueLength: "5"

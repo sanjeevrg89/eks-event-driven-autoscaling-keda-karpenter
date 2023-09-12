@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <h2>Upcoming Concerts</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Concert</th>
+                <th>Singer</th>
+                <th>Available Tickets</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for concert in concerts %}
+            <tr>
+                <td>{{ concert.name }}</td>
+                <td>{{ concert.singer }}</td>
+                <td>{{ concert.tickets }}</td>
+                <td>
+                    <!-- Form for buying tickets -->
+                    <form action="{{ url_for('buy', concert_id=concert.id) }}" method="post">
+                        <button type="submit">Buy Ticket</button>
+                    </form>
+                    <!-- Form for updating inventory -->
+                    <form action="{{ url_for('update_inventory') }}" method="post">
+                        <input type="hidden" name="concert_id" value="{{ concert.id }}">
+                        <input type="number" name="new_inventory" min="0">
+                        <button type="submit">Update Inventory</button>
+                    </form>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+{% endblock %}
